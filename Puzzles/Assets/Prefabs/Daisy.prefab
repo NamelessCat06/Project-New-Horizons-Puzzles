@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8148146196886093967}
   m_Layer: 5
   m_Name: Daisy
-  m_TagString: Untagged
+  m_TagString: Daisy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
