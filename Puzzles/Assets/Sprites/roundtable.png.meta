@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e93c93c3025bec745b382e7cc00d6e49
+guid: da69ebdcc8ac5244b864c2b8417a4ea9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,111 +110,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rose
+      name: roundtable_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1520
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bbdfcd4865694841881d389db744621
+      internalID: 761644981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roundtable_1
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1520
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf9ef43b9a27f6542955941ecd4e223a
+      internalID: 859150144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roundtable_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1705
-        height: 3751
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 932de66da627e694884a9227d90a0daa
-      internalID: -915381934
+      spriteID: 5380198caf6d59c4e9f3b7aeb67501d7
+      internalID: 1502062070
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MorningGlory
+      name: roundtable_3
       rect:
         serializedVersion: 2
-        x: 1705
+        x: 1520
         y: 0
-        width: 1705
-        height: 3751
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ad04da178b3f17469a109d8ab42563b
-      internalID: 549746294
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pansy
-      rect:
-        serializedVersion: 2
-        x: 3410
-        y: 0
-        width: 1705
-        height: 3751
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c50e235bad28a9847a6deaeee530e735
-      internalID: -353559205
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Daisy
-      rect:
-        serializedVersion: 2
-        x: 5115
-        y: 0
-        width: 1705
-        height: 3751
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 59445b34d4de9eb43a29c3b13a5cb77f
-      internalID: 1114773728
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sunflower
-      rect:
-        serializedVersion: 2
-        x: 6820
-        y: 0
-        width: 1705
-        height: 3751
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b33dc9cb9d6d9cd45a326071348b7210
-      internalID: -318824308
+      spriteID: f2d13c5d89f2a524d8409c63f3e45d22
+      internalID: 697373621
       vertices: []
       indices: 
       edges: []
@@ -223,7 +201,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: b0c412728ac57694c90773e27cba4fc6
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -233,11 +211,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Daisy: 1114773728
-      MorningGlory: 549746294
-      Pansy: -353559205
-      Rose: -915381934
-      Sunflower: -318824308
+      roundtable_0: 761644981
+      roundtable_1: 859150144
+      roundtable_2: 1502062070
+      roundtable_3: 697373621
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -6,11 +6,9 @@ public class ItemDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 {
     [HideInInspector] public Transform parentAfterDrag;
     public Image image;
-    //GameObject lastSlot;
     public void OnBeginDrag(PointerEventData eventData)
     {
         Debug.Log("Begin Drag");
-        //lastSlot = eventData.pointerCurrentRaycast.gameObject;
         parentAfterDrag = transform.parent;
         transform.SetParent(transform.root);
         transform.SetAsLastSibling();

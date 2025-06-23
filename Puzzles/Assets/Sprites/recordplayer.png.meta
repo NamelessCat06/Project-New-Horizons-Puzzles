@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e93c93c3025bec745b382e7cc00d6e49
+guid: c3959854a86aab34c855904e935836bf
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,122 +108,12 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Rose
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1705
-        height: 3751
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 932de66da627e694884a9227d90a0daa
-      internalID: -915381934
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MorningGlory
-      rect:
-        serializedVersion: 2
-        x: 1705
-        y: 0
-        width: 1705
-        height: 3751
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9ad04da178b3f17469a109d8ab42563b
-      internalID: 549746294
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pansy
-      rect:
-        serializedVersion: 2
-        x: 3410
-        y: 0
-        width: 1705
-        height: 3751
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c50e235bad28a9847a6deaeee530e735
-      internalID: -353559205
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Daisy
-      rect:
-        serializedVersion: 2
-        x: 5115
-        y: 0
-        width: 1705
-        height: 3751
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 59445b34d4de9eb43a29c3b13a5cb77f
-      internalID: 1114773728
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sunflower
-      rect:
-        serializedVersion: 2
-        x: 6820
-        y: 0
-        width: 1705
-        height: 3751
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b33dc9cb9d6d9cd45a326071348b7210
-      internalID: -318824308
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: b0c412728ac57694c90773e27cba4fc6
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -232,12 +122,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Daisy: 1114773728
-      MorningGlory: 549746294
-      Pansy: -353559205
-      Rose: -915381934
-      Sunflower: -318824308
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
