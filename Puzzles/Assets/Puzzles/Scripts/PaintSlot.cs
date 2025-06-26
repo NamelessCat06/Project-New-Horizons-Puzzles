@@ -3,15 +3,15 @@ using UnityEngine.EventSystems;
 
 public class PaintSlot : MonoBehaviour, IDropHandler
 {
-    public ItemDrag droppedItem = null;
+    public PaintDrag droppedItem = null;
     public void OnDrop(PointerEventData eventData)
     {
         if (transform.childCount < 4)
         {
             GameObject dropped = eventData.pointerDrag;
-            ItemDrag ItemDrag = dropped.GetComponent<ItemDrag>();
-            ItemDrag.parentAfterDrag = transform;
-            droppedItem = ItemDrag;
+            PaintDrag PaintDrag = dropped.GetComponent<PaintDrag>();
+            PaintDrag.parentAfterDrag = transform;
+            droppedItem = PaintDrag;
         }
     }
 }
