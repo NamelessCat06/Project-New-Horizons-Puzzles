@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class PaintDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     [HideInInspector] public Transform parentAfterDrag;
+    [HideInInspector] public Transform parentBeforeDrag;
     public Image image;
     public void OnBeginDrag(PointerEventData eventData)
     {
@@ -12,6 +13,9 @@ public class PaintDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
         if (transform == transform.parent.GetChild(transform.parent.childCount - 1))
         {
             Debug.Log("Begin Drag");
+            Debug.Log("HERE:" + transform.parent.GetComponent<PaintSlot>());
+            parentBeforeDrag = transform.parent;
+
             transform.SetParent(transform.root);
             transform.SetAsLastSibling();
             image.raycastTarget = false;
@@ -36,4 +40,6 @@ public class PaintDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
             image.raycastTarget = true;
         }
     }
+
+
 }
