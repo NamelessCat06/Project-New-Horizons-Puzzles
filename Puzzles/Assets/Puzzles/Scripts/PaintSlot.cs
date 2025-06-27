@@ -8,7 +8,7 @@ public class PaintSlot : MonoBehaviour, IDropHandler
     public void OnDrop(PointerEventData eventData)
     {
         if (transform.childCount >= 4) return;
-  
+
         GameObject dropped = eventData.pointerDrag;
         PaintDrag PaintDrag = dropped.GetComponent<PaintDrag>();
         if (itemTags.Count == 0 || PaintDrag.CompareTag(itemTags[itemTags.Count - 1]))
@@ -24,6 +24,11 @@ public class PaintSlot : MonoBehaviour, IDropHandler
     public void RemoveLast()
     {
         if (itemTags.Count > 0) itemTags.RemoveAt(itemTags.Count - 1);
+    }
+
+    public void CheckWin()
+    {
+        
     }
     
     /*

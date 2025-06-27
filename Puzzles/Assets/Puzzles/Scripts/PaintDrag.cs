@@ -40,6 +40,4 @@ public class PaintDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
             image.raycastTarget = true;
         }
     }
-
-
 }
