@@ -1,10 +1,46 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 using System.Collections.Generic;
+using System.Linq;
 public class PaintSlot : MonoBehaviour, IDropHandler
 {
     public PaintDrag droppedItem = null;
     public List<string> itemTags = new List<string>();
+    //public string itemTagName;
+
+    public bool allGood=false; // Just public for debugging! Later: private?
+
+    PaintPuzzleManager manager;
+
+    // TODO: dynamically initialize the itemTags list correctly - don't manually store in scene!
+
+    public bool IsGood()
+    {
+        return allGood;
+    }
+    public bool IsEmpty()
+    {
+        return itemTags.Count == 0;
+    }
+
+    void OnDestroy()
+    {
+        manager.UnRegisterSlot(this);
+    }
+
+    void Start()
+    {
+        manager = FindObjectOfType<PaintPuzzleManager>();
+        if (manager == null)
+        {
+            Debug.Log("WARNING: no manager found!");
+        }
+        else
+        {
+            manager.RegisterSlot(this);
+        }
+    }
+
     public void OnDrop(PointerEventData eventData)
     {
         if (transform.childCount >= 4) return;
@@ -16,9 +52,16 @@ public class PaintSlot : MonoBehaviour, IDropHandler
             PaintDrag.parentAfterDrag = transform;
             droppedItem = PaintDrag;
             itemTags.Add(PaintDrag.tag);
+            PaintDrag.parentBeforeDrag.GetComponent<PaintSlot>().RemoveLast();
+            if (itemTags.Count == 4)
+            {
+                CheckWin();
+            }
+            else
+            {
+                allGood = false; 
+            }
         }
-
-        PaintDrag.parentBeforeDrag.GetComponent<PaintSlot>().RemoveLast();
     }
 
     public void RemoveLast()
@@ -28,7 +71,27 @@ public class PaintSlot : MonoBehaviour, IDropHandler
 
     public void CheckWin()
     {
-        
+        allGood = false;
+        if (itemTags.Count < 4) return;
+
+        Debug.Log("Checking win on pile " + gameObject.name);
+
+        allGood = true;
+        string itemTagName = itemTags[0];
+
+        for (int i = 1; i < itemTags.Count; i++)
+        {
+            if (itemTags[i] != itemTagName) // also false if null
+            {
+                allGood = false;
+                return;
+            }
+        }
+        if (allGood)
+        {
+            Debug.Log("All Good on pile " + gameObject.name);
+            manager.CheckGameWin();
+        }
     }
     
     /*
