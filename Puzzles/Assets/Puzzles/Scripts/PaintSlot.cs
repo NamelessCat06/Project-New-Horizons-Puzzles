@@ -6,10 +6,8 @@ public class PaintSlot : MonoBehaviour, IDropHandler
 {
     public PaintDrag droppedItem = null;
     public List<string> itemTags = new List<string>();
-    //public string itemTagName;
-
-    public bool allGood=false; // Just public for debugging! Later: private?
-
+    
+    private bool allGood = false;
     PaintPuzzleManager manager;
 
     // TODO: dynamically initialize the itemTags list correctly - don't manually store in scene!
@@ -22,7 +20,6 @@ public class PaintSlot : MonoBehaviour, IDropHandler
     {
         return itemTags.Count == 0;
     }
-
     void OnDestroy()
     {
         manager.UnRegisterSlot(this);
@@ -30,7 +27,7 @@ public class PaintSlot : MonoBehaviour, IDropHandler
 
     void Start()
     {
-        manager = FindObjectOfType<PaintPuzzleManager>();
+        manager = FindAnyObjectByType<PaintPuzzleManager>();
         if (manager == null)
         {
             Debug.Log("WARNING: no manager found!");
