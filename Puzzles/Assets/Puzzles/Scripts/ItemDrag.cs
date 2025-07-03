@@ -6,13 +6,14 @@ public class ItemDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 {
     [HideInInspector] public Transform parentAfterDrag;
     public Image image;
+    public AudioSource itemAudio;
     public void OnBeginDrag(PointerEventData eventData)
     {
-            Debug.Log("Begin Drag");
-            parentAfterDrag = transform.parent;
-            transform.SetParent(transform.root);
-            transform.SetAsLastSibling();
-            image.raycastTarget = false;
+        Debug.Log("Begin Drag");
+        parentAfterDrag = transform.parent;
+        transform.SetParent(transform.root);
+        transform.SetAsLastSibling();
+        image.raycastTarget = false;
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -26,5 +27,6 @@ public class ItemDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         Debug.Log("End Drag");
         transform.SetParent(parentAfterDrag);
         image.raycastTarget = true;
+        itemAudio.Play();
     }
 }

@@ -7,6 +7,8 @@ public class PaintDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     [HideInInspector] public Transform parentAfterDrag;
     [HideInInspector] public Transform parentBeforeDrag;
     public Image image;
+    public AudioSource paintAudio;
+
     public void OnBeginDrag(PointerEventData eventData)
     {
         parentAfterDrag = transform.parent;
@@ -38,6 +40,7 @@ public class PaintDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
             Debug.Log("End Drag");
             transform.SetParent(parentAfterDrag);
             image.raycastTarget = true;
+            paintAudio.Play();
         }
     }
 }

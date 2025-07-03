@@ -4,6 +4,7 @@ using UnityEngine;
 public class PaintPuzzleManager : MonoBehaviour
 {
     List<PaintSlot> slots = new List<PaintSlot>();
+    public AudioSource correctAnswer;
 
     public void RegisterSlot(PaintSlot slot)
     {
@@ -30,6 +31,8 @@ public class PaintPuzzleManager : MonoBehaviour
         if (win)
         {
             Debug.Log("Player has won!");
+            correctAnswer.Play();
+            //SceneManager.LoadScene(SceneName);
         }
     }
 

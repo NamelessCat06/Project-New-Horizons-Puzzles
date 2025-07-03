@@ -1,9 +1,12 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class OrderCheckerScript : MonoBehaviour
 {
     public ItemDrag[] correctOrder;
     public ItemSlot[] slots;
+    public string SceneName;
+    public AudioSource correctAnswer;
 
     // Update is called once per frame
     void Update()
@@ -21,6 +24,8 @@ public class OrderCheckerScript : MonoBehaviour
         if (isCorrect)
         {
             Debug.Log("Win!");
+            correctAnswer.Play();
+            //SceneManager.LoadScene(SceneName);
         }
     }
 }
