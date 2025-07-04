@@ -1,10 +1,12 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PaintPuzzleManager : MonoBehaviour
 {
     List<PaintSlot> slots = new List<PaintSlot>();
     public AudioSource correctAnswer;
+    public string SceneName;
 
     public void RegisterSlot(PaintSlot slot)
     {
@@ -32,7 +34,7 @@ public class PaintPuzzleManager : MonoBehaviour
         {
             Debug.Log("Player has won!");
             correctAnswer.Play();
-            //SceneManager.LoadScene(SceneName);
+            SceneManager.LoadScene(SceneName);
         }
     }
 

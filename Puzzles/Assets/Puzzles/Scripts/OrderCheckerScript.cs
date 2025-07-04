@@ -25,7 +25,7 @@ public class OrderCheckerScript : MonoBehaviour
         {
             Debug.Log("Win!");
             correctAnswer.Play();
-            //SceneManager.LoadScene(SceneName);
+            SceneManager.LoadScene(SceneName);
         }
     }
 }

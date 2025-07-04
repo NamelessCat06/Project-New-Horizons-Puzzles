@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: 2130249422360477621, guid: 81d262864955dbc4ab04313807210b85, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -1923838159, guid: ea117a83e718f094cbaf902d283b11be, type: 3}
+      objectReference: {fileID: 1556530839, guid: 0db057a7c7d037643a725f1ed2499b48, type: 3}
     - target: {fileID: 4086224206703772022, guid: 81d262864955dbc4ab04313807210b85, type: 3}
       propertyPath: m_Name
       value: PuzzlePiece03 Variant

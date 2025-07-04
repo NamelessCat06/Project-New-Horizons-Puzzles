@@ -8,10 +8,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2130249422360477621, guid: 81d262864955dbc4ab04313807210b85, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -519471059, guid: ea117a83e718f094cbaf902d283b11be, type: 3}
     - target: {fileID: 4086224206703772022, guid: 81d262864955dbc4ab04313807210b85, type: 3}
       propertyPath: m_Name
       value: PuzzlePiece09 Variant
